@@ -1,0 +1,11 @@
+package org.demo.app.mapper;
+
+import org.demo.app.entity.Department;
+import org.mapstruct.Mapper;
+import org.mapstruct.NullValuePropertyMappingStrategy;
+import org.mapstruct.ReportingPolicy;
+
+@Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE, componentModel = "spring", nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
+public interface DepartmentMapper extends BaseMapper<Department> {
+
+}

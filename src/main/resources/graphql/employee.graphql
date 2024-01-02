@@ -20,6 +20,6 @@ extend type Query {
 
 extend type Mutation {
     createEmployee(firstName: String!, lastName: String, email: String!, salary: BigDecimal!, department: ID!): Employee!
-    updateEmployee(id: ID!,firstName: String, lastName: String, email: String, salary: BigDecimal, joinDate: Date, department: ID): Employee!
+    updateEmployee(id: ID!,firstName: String, lastName: String, email: String, salary: BigDecimal, department: ID): Employee!
     deleteEmployee(id: ID!): Boolean
 }
